@@ -6,7 +6,7 @@ import data
 def post_new_order(order_body):
     return requests.post(configuration.URL_SERVICE + configuration.CREATE_ORDER,
                          headers=data.headers,
-                         json=data.order_body)
+                         json=order_body)
 
 # Получение заказа по трекеру
 def get_order_track(track):
